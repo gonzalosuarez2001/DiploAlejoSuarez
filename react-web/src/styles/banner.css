@@ -1,0 +1,8 @@
+.banner {
+  height: 523px;
+  background-image: url("../img/banner.png");
+}
+
+.filtro {
+  backdrop-filter: blur(5px);
+}

@@ -1,0 +1,44 @@
+<div
+  style="max-width: 1000px; margin-top: 100px; margin-bottom: 125px;"
+  class="container align-items-center bg-white border shadow rounded-3 p-4 agregarnovedades_contenedor"
+>
+
+  <div class="mb-3 pb-2 text-center">
+    <p class="h2">Agregar Sabor</p>
+  </div>
+
+  <form
+    class="px-5"
+    method="post"
+    action="/admin/sabores/add"
+    enctype="multipart/form-data"
+  >
+    <div class="mb-3">
+      <input
+        placeholder="Sabor"
+        type="text"
+        class="form-control"
+        name="titulo"
+      />
+    </div>
+    <div class="mb-3">
+      <input
+        placeholder="Clase de Helado"
+        type="text"
+        class="form-control"
+        name="subtitulo"
+      />
+    </div>
+    <div class="mb-3">
+      <span>Imagen:</span>
+      <input type="file" class="form-control" name="imagen" />
+    </div>
+
+    {{#if error}}
+      <p class="mt-3 text-secondary p-3 rounded-3 form_warning">Todos los campos
+        son requeridos.</p>
+    {{/if}}
+
+    <button type="submit" class="btn btn-primary">Agregar</button>
+  </form>
+</div>

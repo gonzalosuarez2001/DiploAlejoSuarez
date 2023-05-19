@@ -1,0 +1,16 @@
+.formulario {
+  margin-top: 41px;
+  margin-bottom: 65px;
+  padding: 40px;
+  width: 90%;
+  max-width: 900px;
+}
+
+.contacto_button {
+  background-color: #5A3742;
+}
+
+.contacto_button:active {
+  transform: scale(0.95);
+  transition: 0.1s;
+}

@@ -1,0 +1,13 @@
+.concontainer-img {
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+  min-width: 218px;
+  max-width: 336px;
+}
+
+.descripcion {
+  min-width: 242.5px;
+}

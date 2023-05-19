@@ -1,0 +1,49 @@
+<div class="container">
+  <ul
+    class="row py-3 px-0 border-top border-bottom border-dark justify-content-between align-items-center"
+  >
+    <li class="col-4 col-md-3 h4">
+      <button class="text-light btn btn-dark">{{usuario}}</button>
+    </li>
+    <li class="col-md-auto h2 text-center d-none d-md-block">Sabores</li>
+    <li class="col-8 col-md-3 d-flex justify-content-end">
+      <a
+        style="margin-right: 10px"
+        type="button"
+        class="h3 text-light btn btn-primary"
+        href="/admin/sabores/logout"
+      >Cerrar Sesión</a>
+      <a
+        type="button"
+        class="h3 text-light btn btn-success"
+        href="/admin/sabores/add"
+      >Agregar</a>
+    </li>
+  </ul>
+</div>
+
+<div class="container my-5">
+  <ul class="container_gallery">
+    {{#each sabores}}
+      <li class="gallery_item border shadow">
+        <div class="gallery_image">
+          {{{imagen}}}
+        </div>
+        <div
+          style="height: 75px"
+          class="overlay px-3 d-flex justify-content-between align-items-center"
+        >
+          <a
+            class="btn btn-primary p-2 h5"
+            href="/admin/sabores/modificar/{{id}}"
+          >Editar</a>
+          <p class="h4">{{titulo}}</p>
+          <a
+            class="btn btn-danger p-2 h5"
+            href="/admin/sabores/delete/{{id}}"
+          >Eliminar</a>
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+</div>
